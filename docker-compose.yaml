@@ -1,0 +1,8 @@
+version: "3"
+services:
+  docs:
+    image: built-in-modules-py
+    build: .
+    ports:
+      - 8000:8000
+    command: bash -c "make build && make serve"
