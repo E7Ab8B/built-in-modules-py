@@ -14,8 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build HTML
-        uses: ammaraskar/sphinx-action@master
+      - name: Install dependencies
+        run: pip install docs/requirements.txt
+
+      - name: Sphinx build
+        run: |
+          cd docs
+          make build
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
