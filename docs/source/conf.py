@@ -14,7 +14,7 @@ project = "Built-in Modules"
 extensions = [
     "myst_nb",
     "sphinx.ext.intersphinx",
-    'sphinx.ext.autosectionlabel',
+    "sphinx.ext.autosectionlabel",
     "sphinx_copybutton",
 ]
 source_suffix = {
