@@ -1,6 +1,6 @@
 # itertools
 
-The `itertools` module in Python is a collection of **powerful and memory-efficient tools for working with iterators**, which are objects that can be iterated over.  
+The {py:mod}`itertools` module in Python is a collection of **powerful and memory-efficient tools for working with iterators**, which are objects that can be iterated over.  
 These tools enable:
 
 - efficient manipulation and combination of iterators
