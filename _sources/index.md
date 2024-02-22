@@ -22,6 +22,7 @@ Each module provides a distilled view of essential information, accompanied by J
 ## Table of Contents
 
 - {doc}`modules/functools/index` - Higher-Order Functions and Operations on Callable Objects
+- {doc}`modules/itertools/index` - Functions Creating Iterators for Efficient Looping
 
 ```{toctree}
 :maxdepth: 2
@@ -29,6 +30,7 @@ Each module provides a distilled view of essential information, accompanied by J
 :hidden:
 
 modules/functools/index.md
+modules/itertools/index.md
 ```
 
 ## Further Reading

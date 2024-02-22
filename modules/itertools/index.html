@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>functools &#8212; Built-in Modules  documentation</title>
+    <title>itertools &#8212; Built-in Modules  documentation</title>
   
   
   
@@ -45,11 +45,11 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/functools/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/itertools/index';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="cache()" href="cache.html" />
-    <link rel="prev" title="Built-in Modules" href="../../index.html" />
+    <link rel="next" title="chain()" href="chain.html" />
+    <link rel="prev" title="reduce()" href="../functools/reduce.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,18 +141,18 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">functools</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="cache.html"><code class="docutils literal notranslate"><span class="pre">cache()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="cached_property.html"><code class="docutils literal notranslate"><span class="pre">cached_property()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmp_to_key.html"><code class="docutils literal notranslate"><span class="pre">cmp_to_key()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="lru_cache.html"><code class="docutils literal notranslate"><span class="pre">lru_cache()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="partial.html"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="partialmethod.html"><code class="docutils literal notranslate"><span class="pre">partialmethod()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="reduce.html"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../functools/index.html">functools</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../functools/cache.html"><code class="docutils literal notranslate"><span class="pre">cache()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/cached_property.html"><code class="docutils literal notranslate"><span class="pre">cached_property()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/cmp_to_key.html"><code class="docutils literal notranslate"><span class="pre">cmp_to_key()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/lru_cache.html"><code class="docutils literal notranslate"><span class="pre">lru_cache()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/partial.html"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/partialmethod.html"><code class="docutils literal notranslate"><span class="pre">partialmethod()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/reduce.html"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../itertools/index.html">itertools</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/chain.html"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">itertools</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chain.html"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -209,7 +209,7 @@
       
       
       
-      <li><a href="../../_sources/modules/functools/index.md" target="_blank"
+      <li><a href="../../_sources/modules/itertools/index.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +291,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>functools</h1>
+    <h1>itertools</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -305,25 +305,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="functools">
-<h1>functools<a class="headerlink" href="#functools" title="Permalink to this heading">#</a></h1>
-<p>The <a class="reference external" href="https://docs.python.org/3/library/functools.html#module-functools" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">functools</span></code></a> module in Python provides higher-order functions and operations on callable objects.<br />
-It includes a variety of <strong>tools that enable functional programming techniques</strong>, such as:</p>
+  <section id="itertools">
+<h1>itertools<a class="headerlink" href="#itertools" title="Permalink to this heading">#</a></h1>
+<p>The <a class="reference external" href="https://docs.python.org/3/library/itertools.html#module-itertools" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">itertools</span></code></a> module in Python is a collection of <strong>powerful and memory-efficient tools for working with iterators</strong>, which are objects that can be iterated over.<br />
+These tools enable:</p>
 <ul class="simple">
-<li><p>function composition</p></li>
-<li><p>partial function application</p></li>
-<li><p>memoization</p></li>
+<li><p>efficient manipulation and combination of iterators</p></li>
+<li><p>providing a versatile set of building blocks for creating complex data processing pipelines</p></li>
 </ul>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="cache.html"><code class="docutils literal notranslate"><span class="pre">cache()</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="cached_property.html"><code class="docutils literal notranslate"><span class="pre">cached_property()</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmp_to_key.html"><code class="docutils literal notranslate"><span class="pre">cmp_to_key()</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="lru_cache.html"><code class="docutils literal notranslate"><span class="pre">lru_cache()</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="partial.html"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="partialmethod.html"><code class="docutils literal notranslate"><span class="pre">partialmethod()</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="reduce.html"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain.html"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></a></li>
 </ul>
 </div>
 </section>
@@ -340,20 +333,20 @@ It includes a variety of <strong>tools that enable functional programming techni
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../index.html"
+       href="../functools/reduce.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Built-in Modules</p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="cache.html"
+       href="chain.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">cache()</span></code></p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
