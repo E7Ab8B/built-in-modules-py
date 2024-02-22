@@ -1,6 +1,6 @@
 # functools
 
-The `functools` module in Python provides higher-order functions and operations on callable objects.  
+The {py:mod}`functools` module in Python provides higher-order functions and operations on callable objects.  
 It includes a variety of **tools that enable functional programming techniques**, such as:
 
 - function composition
