@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>cycle() &#8212; Built-in Modules  documentation</title>
+    <title>dropwhile() &#8212; Built-in Modules  documentation</title>
   
   
   
@@ -45,11 +45,10 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/itertools/cycle';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/itertools/dropwhile';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="dropwhile()" href="dropwhile.html" />
-    <link rel="prev" title="chain()" href="chain.html" />
+    <link rel="prev" title="cycle()" href="cycle.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,8 +152,8 @@
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">itertools</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="chain.html"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">cycle()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="dropwhile.html"><code class="docutils literal notranslate"><span class="pre">dropwhile()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="cycle.html"><code class="docutils literal notranslate"><span class="pre">cycle()</span></code></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">dropwhile()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -211,7 +210,7 @@
       
       
       
-      <li><a href="../../_sources/modules/itertools/cycle.ipynb" target="_blank"
+      <li><a href="../../_sources/modules/itertools/dropwhile.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -295,7 +294,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>cycle()</h1>
+    <h1>dropwhile()</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -309,8 +308,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example #1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example #2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 </ul>
 </li>
 </ul>
@@ -324,94 +324,120 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="cycle">
-<h1><code class="docutils literal notranslate"><span class="pre">cycle()</span></code><a class="headerlink" href="#cycle" title="Permalink to this heading">#</a></h1>
-<p><a class="reference external" href="https://docs.python.org/3/library/itertools.html#itertools.cycle">https://docs.python.org/3/library/itertools.html#itertools.cycle</a></p>
+  <section id="dropwhile">
+<h1><code class="docutils literal notranslate"><span class="pre">dropwhile()</span></code><a class="headerlink" href="#dropwhile" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://docs.python.org/3/library/itertools.html#itertools.dropwhile">https://docs.python.org/3/library/itertools.html#itertools.dropwhile</a></p>
 <section id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">cycle</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">dropwhile</span>
 
-<span class="n">cycle</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+<span class="n">dropwhile</span><span class="p">(</span><span class="n">predicate</span><span class="p">,</span> <span class="n">iterable</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">#</a></h2>
-<p>Returns an <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterator" title="(in Python v3.12)"><span class="xref std std-term">iterator</span></a> that cycles <strong>indefinitely</strong> through the elements of an <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.12)"><span class="xref std std-term">iterable</span></a>.<br />
-When the end of the <code class="docutils literal notranslate"><span class="pre">iterable</span></code> is reached, cycle starts again from the beginning, allowing for <strong>infinite repetition</strong> of the elements.</p>
+<p>Skips elements from the input <code class="docutils literal notranslate"><span class="pre">iterable</span></code> until <code class="docutils literal notranslate"><span class="pre">predicate</span></code> function returns <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> for an element, and then yields all subsequent elements.
+Essentially, it “drops” elements while the predicate function evaluates to <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>.</p>
+<p>This functionality is useful for <strong>selectively filtering elements</strong> from the beginning of an <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.12)"><span class="xref std std-term">iterable</span></a> based on a condition.</p>
 </section>
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Infinite Looping</p></li>
-<li><p>Round-Robin Scheduling</p></li>
+<li><p>Data Filtering</p></li>
+<li><p>Preprocessing Data</p></li>
 </ul>
 </section>
 <section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
 <section id="example-1">
-<h3>Example #1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h3>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">cycle</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">dropwhile</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="s2">&quot;000123&quot;</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-    <span class="nb">next</span><span class="p">(</span><span class="n">cycle</span><span class="p">(</span><span class="n">colors</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dropwhile</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="n">number</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;123&#39;
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="example-2">
-<h3>Example #2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h3>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">cycle</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">dropwhile</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Task1&quot;</span><span class="p">,</span> <span class="s2">&quot;Task2&quot;</span><span class="p">,</span> <span class="s2">&quot;Task3&quot;</span><span class="p">]</span>
-<span class="n">resources</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Resource1&quot;</span><span class="p">,</span> <span class="s2">&quot;Resource2&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">samples</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1050</span><span class="p">,</span> <span class="mi">1080</span><span class="p">,</span> <span class="mi">1090</span><span class="p">,</span> <span class="mi">1100</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="mi">520</span><span class="p">,</span> <span class="mi">530</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zipped_iter</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">cycle</span><span class="p">(</span><span class="n">tasks</span><span class="p">),</span> <span class="n">cycle</span><span class="p">(</span><span class="n">resources</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="n">task</span><span class="p">,</span> <span class="n">resource</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">zipped_iter</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Assigning </span><span class="si">{</span><span class="n">task</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">resource</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">dropwhile</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">samples</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Assigning Task1 to Resource1
-Assigning Task2 to Resource2
-Assigning Task3 to Resource1
-Assigning Task1 to Resource2
-Assigning Task2 to Resource1
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1000, 1050, 1080, 1090, 1100, 500, 510, 520, 530]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">dropwhile</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">headers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Content-Type: application/json&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Content-Length: 123&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;{&quot;key&quot;: &quot;value&quot;}&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skip initial lines until the first empty line</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">dropwhile</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">headers</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;&#39;, &#39;{&quot;key&quot;: &quot;value&quot;}&#39;]
 </pre></div>
 </div>
 </div>
@@ -432,22 +458,13 @@ Assigning Task2 to Resource1
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="chain.html"
+       href="cycle.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">cycle()</span></code></p>
       </div>
-    </a>
-    <a class="right-next"
-       href="dropwhile.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">dropwhile()</span></code></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -469,8 +486,9 @@ Assigning Task2 to Resource1
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example #1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example #2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 </ul>
 </li>
 </ul>
