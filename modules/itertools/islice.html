@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>partialmethod() &#8212; Built-in Modules  documentation</title>
+    <title>islice() &#8212; Built-in Modules  documentation</title>
   
   
   
@@ -45,11 +45,10 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/functools/partialmethod';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/itertools/islice';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="reduce()" href="reduce.html" />
-    <link rel="prev" title="partial()" href="partial.html" />
+    <link rel="prev" title="filterfalse()" href="filterfalse.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,25 +140,25 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">functools</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="cache.html"><code class="docutils literal notranslate"><span class="pre">cache()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="cached_property.html"><code class="docutils literal notranslate"><span class="pre">cached_property()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmp_to_key.html"><code class="docutils literal notranslate"><span class="pre">cmp_to_key()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="lru_cache.html"><code class="docutils literal notranslate"><span class="pre">lru_cache()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="partial.html"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">partialmethod()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="reduce.html"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../functools/index.html">functools</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../functools/cache.html"><code class="docutils literal notranslate"><span class="pre">cache()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/cached_property.html"><code class="docutils literal notranslate"><span class="pre">cached_property()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/cmp_to_key.html"><code class="docutils literal notranslate"><span class="pre">cmp_to_key()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/lru_cache.html"><code class="docutils literal notranslate"><span class="pre">lru_cache()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/partial.html"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/partialmethod.html"><code class="docutils literal notranslate"><span class="pre">partialmethod()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functools/reduce.html"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../itertools/index.html">itertools</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/accumulate.html"><code class="docutils literal notranslate"><span class="pre">accumulate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/chain.html"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/compress.html"><code class="docutils literal notranslate"><span class="pre">compress()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/count.html"><code class="docutils literal notranslate"><span class="pre">count()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/cycle.html"><code class="docutils literal notranslate"><span class="pre">cycle()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/dropwhile.html"><code class="docutils literal notranslate"><span class="pre">dropwhile()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/filterfalse.html"><code class="docutils literal notranslate"><span class="pre">filterfalse()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools/islice.html"><code class="docutils literal notranslate"><span class="pre">islice()</span></code></a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">itertools</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="accumulate.html"><code class="docutils literal notranslate"><span class="pre">accumulate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chain.html"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="compress.html"><code class="docutils literal notranslate"><span class="pre">compress()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="count.html"><code class="docutils literal notranslate"><span class="pre">count()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="cycle.html"><code class="docutils literal notranslate"><span class="pre">cycle()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dropwhile.html"><code class="docutils literal notranslate"><span class="pre">dropwhile()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterfalse.html"><code class="docutils literal notranslate"><span class="pre">filterfalse()</span></code></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">islice()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -216,7 +215,7 @@
       
       
       
-      <li><a href="../../_sources/modules/functools/partialmethod.ipynb" target="_blank"
+      <li><a href="../../_sources/modules/itertools/islice.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -300,7 +299,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>partialmethod()</h1>
+    <h1>islice()</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -314,10 +313,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example #1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example #2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
 </ul>
             </nav>
         </div>
@@ -329,165 +328,104 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="partialmethod">
-<h1><code class="docutils literal notranslate"><span class="pre">partialmethod()</span></code><a class="headerlink" href="#partialmethod" title="Permalink to this heading">#</a></h1>
-<p><a class="reference external" href="https://docs.python.org/3/library/functools.html#functools.partialmethod">https://docs.python.org/3/library/functools.html#functools.partialmethod</a></p>
+  <section id="islice">
+<h1><code class="docutils literal notranslate"><span class="pre">islice()</span></code><a class="headerlink" href="#islice" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://docs.python.org/3/library/itertools.html#itertools.islice">https://docs.python.org/3/library/itertools.html#itertools.islice</a></p>
 <section id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partialmethod</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">islice</span>
 
-<span class="n">partialmethod</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">keywords</span><span class="p">)</span>
+<span class="n">islice</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">stop</span><span class="p">)</span>
+<span class="n">islice</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">#</a></h2>
-<p>Return a new partialmethod descriptor which behaves like <code class="docutils literal notranslate"><span class="pre">partial</span></code> except that it
-is designed to be used as a method definition rather than being directly
-callable.</p>
-<p><code class="docutils literal notranslate"><span class="pre">func</span></code> must be a <strong>descriptor</strong> or a <strong>callable</strong> (objects which are both, like normal
-functions, are handled as descriptors).</p>
+<p>Returns an <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterator" title="(in Python v3.12)"><span class="xref std std-term">iterator</span></a> that yields a slice of elements from <code class="docutils literal notranslate"><span class="pre">iterable</span></code>.  This slice is specified by providing <code class="docutils literal notranslate"><span class="pre">start</span></code>, <code class="docutils literal notranslate"><span class="pre">stop</span></code>, and <code class="docutils literal notranslate"><span class="pre">step</span></code> indices similar to the built-in <code class="docutils literal notranslate"><span class="pre">slice()</span></code>.</p>
 </section>
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Simplifying function signatures</p></li>
-<li><p>Delaying computation</p></li>
-<li><p>Adapting to APIs</p></li>
+<li><p>Extracting a Subset of Elements</p></li>
+<li><p>Skipping Elements</p></li>
+<li><p>Working with Infinite Iterables</p></li>
 </ul>
 </section>
 <section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
 <section id="example-1">
-<h3>Example #1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h3>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partialmethod</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">islice</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Cell</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_alive</span> <span class="o">=</span> <span class="kc">False</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">alive</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_alive</span>
-
-    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_alive</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
-
-    <span class="n">set_alive</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">set_state</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
-    <span class="n">set_dead</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">set_state</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">Cell</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subset</span> <span class="o">=</span> <span class="n">islice</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">alive</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">subset</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3, 4, 5]
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">set_alive</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">alive</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
-</pre></div>
-</div>
-</div>
-</div>
+</section>
 </section>
 <section id="example-2">
-<h3>Example #2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h3>
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partialmethod</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">count</span><span class="p">,</span> <span class="n">islice</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="s2">&quot;Bear&quot;</span>
-
-    <span class="k">def</span> <span class="nf">_set_species</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="n">species</span>
-
-    <span class="n">set_dog</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">_set_species</span><span class="p">,</span> <span class="n">species</span><span class="o">=</span><span class="s2">&quot;Dog&quot;</span><span class="p">)</span>
-    <span class="n">set_rabbit</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">_set_species</span><span class="p">,</span> <span class="n">species</span><span class="o">=</span><span class="s2">&quot;Rabbit&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">infinite_counter</span> <span class="o">=</span> <span class="n">count</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_10</span> <span class="o">=</span> <span class="n">islice</span><span class="p">(</span><span class="n">infinite_counter</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animal</span><span class="o">.</span><span class="n">species</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">first_10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Bear&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animal</span><span class="o">.</span><span class="n">set_dog</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animal</span><span class="o">.</span><span class="n">species</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Dog&#39;
-</pre></div>
-</div>
-</div>
-</div>
-</section>
 </section>
 </section>
 
@@ -503,22 +441,13 @@ functions, are handled as descriptors).</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="partial.html"
+       href="filterfalse.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">filterfalse()</span></code></p>
       </div>
-    </a>
-    <a class="right-next"
-       href="reduce.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -540,10 +469,10 @@ functions, are handled as descriptors).</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example #1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example #2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
 </ul>
   </nav></div>
 
