@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>combinations() &#8212; Built-in Modules  documentation</title>
+    <title>starmap() &#8212; Built-in Modules  documentation</title>
   
   
   
@@ -45,11 +45,10 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/itertools/combinations';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/itertools/starmap';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="compress()" href="compress.html" />
-    <link rel="prev" title="chain()" href="chain.html" />
+    <link rel="prev" title="repeat()" href="repeat.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,7 +153,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">itertools</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="accumulate.html"><code class="docutils literal notranslate"><span class="pre">accumulate()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chain.html"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">combinations()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="combinations.html"><code class="docutils literal notranslate"><span class="pre">combinations()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="compress.html"><code class="docutils literal notranslate"><span class="pre">compress()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="count.html"><code class="docutils literal notranslate"><span class="pre">count()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="cycle.html"><code class="docutils literal notranslate"><span class="pre">cycle()</span></code></a></li>
@@ -163,7 +162,7 @@
 <li class="toctree-l2"><a class="reference internal" href="islice.html"><code class="docutils literal notranslate"><span class="pre">islice()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="pairwise.html"><code class="docutils literal notranslate"><span class="pre">pairwise()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="repeat.html"><code class="docutils literal notranslate"><span class="pre">repeat()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="starmap.html"><code class="docutils literal notranslate"><span class="pre">starmap()</span></code></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">starmap()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -220,7 +219,7 @@
       
       
       
-      <li><a href="../../_sources/modules/itertools/combinations.ipynb" target="_blank"
+      <li><a href="../../_sources/modules/itertools/starmap.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -304,7 +303,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>combinations()</h1>
+    <h1>starmap()</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -333,28 +332,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="combinations">
-<h1><code class="docutils literal notranslate"><span class="pre">combinations()</span></code><a class="headerlink" href="#combinations" title="Permalink to this heading">#</a></h1>
-<p><a class="reference external" href="https://docs.python.org/3/library/itertools.html#itertools.combinations">https://docs.python.org/3/library/itertools.html#itertools.combinations</a></p>
+  <section id="starmap">
+<h1><code class="docutils literal notranslate"><span class="pre">starmap()</span></code><a class="headerlink" href="#starmap" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://docs.python.org/3/library/itertools.html#itertools.starmap">https://docs.python.org/3/library/itertools.html#itertools.starmap</a></p>
 <section id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">combinations</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">starmap</span>
 
-<span class="n">combinations</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+<span class="n">starmap</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">iterable</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">#</a></h2>
-<p>Generates all possible combinations of a specified <code class="docutils literal notranslate"><span class="pre">r</span></code>-length from the elements of an input <code class="docutils literal notranslate"><span class="pre">iterable</span></code>.<br />
-Each combination is returned as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a> in <strong>lexicographic sorted order</strong>.</p>
+<p>Applies a specified <code class="docutils literal notranslate"><span class="pre">function</span></code> to each element of an <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.12)"><span class="xref std std-term">iterable</span></a>, unpacking the elements as arguments if they are <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.12)"><span class="xref std std-term">iterable</span></a> themselves.</p>
 </section>
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Generating All Possible Subsets</p></li>
-<li><p>Creating Combinatorial Problems</p></li>
-<li><p>Enumerating All Possible Matches</p></li>
+<li><p>Applying a Function to Each Element</p></li>
+<li><p>Mathematical Operations</p></li>
+<li><p>Matrix Operations</p></li>
 </ul>
 </section>
 <section id="examples">
@@ -363,32 +361,34 @@ Each combination is returned as a <a class="reference external" href="https://do
 <h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">combinations</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">starmap</span>
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="nb">pow</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">teams</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Team A&quot;</span><span class="p">,</span> <span class="s2">&quot;Team B&quot;</span><span class="p">,</span> <span class="s2">&quot;Team C&quot;</span><span class="p">,</span> <span class="s2">&quot;Team D&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">team_match</span> <span class="ow">in</span> <span class="n">combinations</span><span class="p">(</span><span class="n">teams</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">team_match</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="n">starmap</span><span class="p">(</span><span class="nb">pow</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;Team A&#39;, &#39;Team B&#39;)
-(&#39;Team A&#39;, &#39;Team C&#39;)
-(&#39;Team A&#39;, &#39;Team D&#39;)
-(&#39;Team B&#39;, &#39;Team C&#39;)
-(&#39;Team B&#39;, &#39;Team D&#39;)
-(&#39;Team C&#39;, &#39;Team D&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[8, 1024, 279936]
 </pre></div>
 </div>
 </div>
@@ -398,54 +398,33 @@ Each combination is returned as a <a class="reference external" href="https://do
 <h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">combinations</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">starmap</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cards</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;2H&quot;</span><span class="p">,</span> <span class="s2">&quot;3H&quot;</span><span class="p">,</span> <span class="s2">&quot;4H&quot;</span><span class="p">,</span> <span class="s2">&quot;5H&quot;</span><span class="p">,</span> <span class="s2">&quot;6H&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">items</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate combinations for hands of different sizes</span>
-<span class="k">for</span> <span class="n">size</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cards</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">hand</span> <span class="ow">in</span> <span class="n">combinations</span><span class="p">(</span><span class="n">cards</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">hand</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">total_costs</span> <span class="o">=</span> <span class="n">starmap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">price</span><span class="p">,</span> <span class="n">quantity</span><span class="p">:</span> <span class="n">price</span> <span class="o">*</span> <span class="n">quantity</span><span class="p">,</span> <span class="n">items</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">total_costs</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;2H&#39;, &#39;3H&#39;)
-(&#39;2H&#39;, &#39;4H&#39;)
-(&#39;2H&#39;, &#39;5H&#39;)
-(&#39;2H&#39;, &#39;6H&#39;)
-(&#39;3H&#39;, &#39;4H&#39;)
-(&#39;3H&#39;, &#39;5H&#39;)
-(&#39;3H&#39;, &#39;6H&#39;)
-(&#39;4H&#39;, &#39;5H&#39;)
-(&#39;4H&#39;, &#39;6H&#39;)
-(&#39;5H&#39;, &#39;6H&#39;)
-(&#39;2H&#39;, &#39;3H&#39;, &#39;4H&#39;)
-(&#39;2H&#39;, &#39;3H&#39;, &#39;5H&#39;)
-(&#39;2H&#39;, &#39;3H&#39;, &#39;6H&#39;)
-(&#39;2H&#39;, &#39;4H&#39;, &#39;5H&#39;)
-(&#39;2H&#39;, &#39;4H&#39;, &#39;6H&#39;)
-(&#39;2H&#39;, &#39;5H&#39;, &#39;6H&#39;)
-(&#39;3H&#39;, &#39;4H&#39;, &#39;5H&#39;)
-(&#39;3H&#39;, &#39;4H&#39;, &#39;6H&#39;)
-(&#39;3H&#39;, &#39;5H&#39;, &#39;6H&#39;)
-(&#39;4H&#39;, &#39;5H&#39;, &#39;6H&#39;)
-(&#39;2H&#39;, &#39;3H&#39;, &#39;4H&#39;, &#39;5H&#39;)
-(&#39;2H&#39;, &#39;3H&#39;, &#39;4H&#39;, &#39;6H&#39;)
-(&#39;2H&#39;, &#39;3H&#39;, &#39;5H&#39;, &#39;6H&#39;)
-(&#39;2H&#39;, &#39;4H&#39;, &#39;5H&#39;, &#39;6H&#39;)
-(&#39;3H&#39;, &#39;4H&#39;, &#39;5H&#39;, &#39;6H&#39;)
-(&#39;2H&#39;, &#39;3H&#39;, &#39;4H&#39;, &#39;5H&#39;, &#39;6H&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[20, 60, 15]
 </pre></div>
 </div>
 </div>
@@ -466,22 +445,13 @@ Each combination is returned as a <a class="reference external" href="https://do
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="chain.html"
+       href="repeat.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">chain()</span></code></p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">repeat()</span></code></p>
       </div>
-    </a>
-    <a class="right-next"
-       href="compress.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">compress()</span></code></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
